@@ -20,10 +20,6 @@ public class UserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        
-        
-
-        
         UserService us = new UserService();
         String action = request.getParameter("action");
         if (action != null && action.equals("view")) {
